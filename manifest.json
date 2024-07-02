@@ -1,0 +1,67 @@
+{
+  "platform": [
+    {
+      "os": "windows",
+      "arch": "x86_64",
+      "java": {
+        "jre": "jdk-22.0.1+8",
+        "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk_x64_windows_hotspot_22.0.1_8.zip",
+        "main": "com.harleylizard.space.Main",
+        "command": "cmd /C $jre\\bin\\javaw.exe -cp $directory/* $main",
+        "args": [
+        ]
+      },
+      "directory": "libraries",
+      "dependencies": [
+        {
+          "name": "joml-1.10.6",
+          "url": "https://repo1.maven.org/maven2/org/joml/joml/1.10.6/joml-1.10.6.jar"
+        },
+        {
+          "name": "gson-2.11.0",
+          "url": "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar"
+        },
+        {
+          "name": "gson-2.11.0",
+          "url": "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.11.0/gson-2.11.0.jar"
+        },
+        {
+          "name": "fastutil-8.5.13",
+          "url": "https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/8.5.13/fastutil-8.5.13.jar"
+        },
+        {
+          "name": "lwjgl-3.3.3",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3.jar"
+        },
+        {
+          "name": "lwjgl-3.3.3-natives-windows",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl/3.3.3/lwjgl-3.3.3-natives-windows.jar"
+        },
+        {
+          "name": "lwjgl-opengl-3.3.3",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3.jar"
+        },
+        {
+          "name": "lwjgl-opengl-3.3.3-natives-windows",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-opengl/3.3.3/lwjgl-opengl-3.3.3-natives-windows.jar"
+        },
+        {
+          "name": "lwjgl-glfw-3.3.3",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3.jar"
+        },
+        {
+          "name": "lwjgl-glfw-3.3.3-natives-windows",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-glfw/3.3.3/lwjgl-glfw-3.3.3-natives-windows.jar"
+        },
+        {
+          "name": "lwjgl-stb-3.3.3",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3.jar"
+        },
+        {
+          "name": "lwjgl-stb-3.3.3-natives-windows",
+          "url": "https://repo1.maven.org/maven2/org/lwjgl/lwjgl-stb/3.3.3/lwjgl-stb-3.3.3-natives-windows.jar"
+        }
+      ]
+    }
+  ]
+}

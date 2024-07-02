@@ -1,0 +1,6 @@
+/target
+/libraries/
+/jdk-17.0.6+10-jre/
+/checksum.json
+/jdk-22.0.1+8/
+/.cache/
