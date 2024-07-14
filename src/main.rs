@@ -1,7 +1,9 @@
 use std::{fs, io};
 use std::error::Error;
 use std::fmt::Debug;
+use std::io::Read;
 use std::path::Path;
+
 use crate::hash::Validator;
 use crate::manifest::Platform;
 
@@ -9,10 +11,11 @@ mod manifest;
 mod device;
 mod download;
 mod hash;
+mod tests;
 
 fn pause() {
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).expect("TODO: panic message");
+    let mut buffer = [0; 1];
+    io::stdin().read_exact(&mut buffer).unwrap();
 }
 
 async fn run(platform: &Platform) {
@@ -24,7 +27,7 @@ async fn run(platform: &Platform) {
     println!("{}", String::from_utf8_lossy(&*output.stdout));
     println!("{}", output.status.success());
 
-    println!("Enter input to exit console");
+    println!("Press any key to exist...");
     pause();
 }
 
